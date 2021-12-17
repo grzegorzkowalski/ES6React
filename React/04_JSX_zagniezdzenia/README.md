@@ -49,6 +49,34 @@ Zadaniem jest przeiterowanie po całej tablicy obiektów, tak aby stworzyć tabl
 
 Powyższy kod jest jedynie poglądowy. Pamiętaj, w jaki sposób powinna być przekazywana nazwa klasy `CSS` w tagach `JSX` oraz o odpowiednich zamknięciach znaczników. Nazwy tych właściwości obiektu znajdziesz w importowanym pliku.
 
+```
+.person {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 650px;
+    background: #efefef;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.person img {
+    width: 64px;
+    height: auto;
+}
+
+.person h1,
+.person p {
+    margin: 0;
+}
+
+.person .info {
+    padding-left: 15px;
+}
+```
 
 Następnie za pomocą React wyrenderuj w elemencie o klasie `App` wszystkie wygenerowane elementy `div`.
 

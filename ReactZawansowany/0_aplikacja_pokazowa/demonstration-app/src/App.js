@@ -1,22 +1,23 @@
-import './App.css';
 import {
-    BrowserRouter, Route, Routes
+    BrowserRouter,
+    Routes,
+    Route
 } from "react-router-dom";
 import Home from "./components/Home";
-import {Component} from "react";
+import About from "./components/About";
+import User from "./components/User"
 
-class About extends Component {
-    render() {
-        return null;
-    }
-}
+import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route to="/" element={<Home />} />
-        <Router to="/about" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="user" element={<User />} >
+              <Route path=":id" element={<User />} />
+          </Route>
+          <Route exact path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
