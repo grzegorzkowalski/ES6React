@@ -3,13 +3,16 @@ import Hello from "./components/Hello";
 import ParentComponent from "./components/ParentComponent";
 import ChildComponent from "./components/ChildComponent";
 import GrandchildComponent from "./components/GrandchildComponent";
-import './App.css';
 import HelloWorld from "./components/HelloWorld";
 import Buttons from "./components/Buttons";
 import ButtonCounter from "./components/ButtonCounter";
+import MyButton from "./components/MyButton";
+import Hello2 from "./components/Hello2";
+import BookInfo from "./components/BookInfo";
+import './App.css';
 
 function App() {
-  return (
+    return (
     <div style={{margin: "20px"}}>
         {/*<Search />*/}
         {/*<Hello name="Grzegorz" surname="Kowalski" />*/}
@@ -21,10 +24,13 @@ function App() {
         {/*</ParentComponent>*/}
         {/*<HelloWorld />*/}
         {/*<Buttons />*/}
-        <ButtonCounter />
-
+        {/*<ButtonCounter />*/}
+        {/*<MyButton />*/}
+        {/*<Hello2 />*/}
+        <BookInfo isbn="0747532699" />
     </div>
   );
+
 };
 
 export default App;
